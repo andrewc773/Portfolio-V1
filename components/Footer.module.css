@@ -1,0 +1,129 @@
+/*Global*/
+.footerContainer {
+  overflow-x: hidden;
+}
+
+.icon {
+  color: white;
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+
+.gmail:hover {
+  color: #b2071d;
+}
+
+.linkedin:hover {
+  color: #0072b1;
+}
+
+.youtube:hover {
+  color: #b2071d;
+}
+
+.github:hover {
+  color: #6e5494;
+}
+/*Media Query for Phone*/
+@media screen and (min-width: 320px) {
+  .footerContainer {
+    min-height: 15vh;
+    margin-top: auto;
+    width: 100%;
+    display: block; /*Starts on a new line and takes up the whole width*/
+  }
+
+  .topBorder {
+    border-bottom: 2px solid grey;
+    padding-top: 2em;
+    width: 100%;
+  }
+
+  .contents {
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+    font-size: xx-large;
+  }
+
+  .gmail {
+    margin-bottom: 25px;
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  .github {
+    margin-top: 4px;
+  }
+
+  .linkedin {
+    margin-top: 3px;
+  }
+
+  .youtube {
+    margin-top: 1px;
+    font-size: 40px;
+  }
+}
+
+/*Media Query for Tablet*/
+@media screen and (min-width: 768px) {
+  /* .icons {
+    margin: 0 20% 0;
+  } */
+  .icons {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 30px;
+  }
+
+  .contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: large;
+    padding: 5px 0 0 100px;
+  }
+}
+
+/*Media Query for Desktop*/
+@media screen and (min-width: 1000px) {
+  .icons {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 35px;
+  }
+}
+
+/*Media Query for Desktop*/
+@media screen and (min-width: 1400px) {
+  .icons {
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 35px;
+  }
+}
+/*Non-media query CSS*/
+
+.icons a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.icons a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  color: rgb(195, 192, 192);
+  font-weight: 600;
+  font-family: "Roboto";
+}

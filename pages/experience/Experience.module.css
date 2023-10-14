@@ -1,0 +1,32 @@
+.contents {
+  border: 2px solid yellow;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 3rem 0;
+}
+
+.header h1 {
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/*Media query for phones*/
+@media screen and (min-width: 320px) {
+  .boxContainer {
+    padding-top: 20px;
+  }
+  .header {
+    text-align: center;
+    font-size: x-large;
+  }
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) {
+}
+
+/*Laptop/Desktop*/
+@media screen and (min-width: 1000px) {
+}

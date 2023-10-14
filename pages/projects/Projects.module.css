@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
+
+/*Media query for phones*/
+@media screen and (min-width: 320px) {
+  .header {
+    text-align: center;
+    font-size: x-large;
+  }
+  .content {
+    text-align: center;
+    font-size: x-large;
+  }
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) {
+}
+
+/*Laptop/Desktop*/
+@media screen and (min-width: 1000px) {
+  .header {
+    font-size: x-large;
+  }
+  .content {
+    font-size: xx-large;
+  }
+}

@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
+
+/*Global*/
+
+.link {
+  text-decoration: none;
+  display: contents;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badges {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+
+.box {
+  border-radius: 25px;
+  color: #ffffff;
+  background-color: #2d2c2c;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+  max-width: 1000px;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+.boxes {
+  font-family: "Raleway";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.description {
+  text-align: left;
+}
+
+.left {
+  flex: 30%;
+  text-align: center;
+  padding-top: 25px;
+  font-size: large;
+}
+.oracle {
+  padding-left: 2px;
+}
+
+.right {
+  flex: 70%;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.header {
+  font-size: var(--fs-l);
+}
+.text {
+  font-size: var(--fs-m);
+  padding-bottom: 20px;
+}
+.date {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.logo {
+  padding: 0px 0 0 5px;
+  vertical-align: middle;
+  line-height: 30px;
+  font-size: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+  transition: 1s;
+}
+
+.link:hover .company {
+  color: orange;
+  transition: all 1.5s ease-in-out;
+}
+
+.link:hover .logo {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+  text-shadow: 0 0 4px orange;
+  color: orange;
+}
+
+.company {
+  transition: 1s;
+}
+
+.technologyBadge {
+  width: min-content;
+  height: 20px;
+  border-radius: 40px / 40px;
+  text-align: center;
+  color: orange;
+  background-color: inherit;
+  text-align: center;
+  padding: 4px 8px 0 8px;
+  margin: 0px;
+  vertical-align: middle;
+  display: inline-block;
+  font-family: monospace;
+}
+
+.technologyBadge + .technologyBadge {
+  margin-left: 10px;
+}
+
+/*Phone*/
+@media screen and (min-width: 320px) {
+  .jobTitle span {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .box {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  .right {
+    flex: 100%;
+  }
+  .left {
+    flex: 0%;
+  }
+  .text {
+    text-align: center;
+    padding-left: 15px;
+  }
+  .text span {
+    visibility: visible;
+  }
+  .header {
+    display: block;
+    text-align: center;
+    padding-left: 30px;
+  }
+
+  .company {
+    padding-left: 20px;
+  }
+  .badges {
+    padding-left: 15px;
+    margin-bottom: 20px;
+  }
+  .technologyBadge {
+    font-size: small;
+  }
+  .description {
+    text-align: center;
+  }
+  .left {
+    visibility: hidden;
+  }
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) {
+  .box {
+    width: 90%;
+  }
+
+  .technologyBadge {
+    font-size: larger;
+  }
+}
+
+/*Laptop*/
+@media screen and (min-width: 1000px) {
+  .box {
+    width: 90%;
+  }
+
+  .left {
+    flex: 30%;
+    text-align: center;
+    padding-top: 25px;
+    font-size: large;
+  }
+
+  .date {
+    visibility: visible;
+    height: auto;
+    width: 80px;
+    margin-left: 40px;
+    text-align: left;
+  }
+
+  .text span {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  .header {
+    display: flex;
+    padding-left: 15px;
+  }
+  .description {
+    text-align: left;
+  }
+
+  .text {
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  .jobTitle span {
+    visibility: visible;
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1200px) {
+  .technologyBadge {
+    font-size: x-large;
+  }
+}
